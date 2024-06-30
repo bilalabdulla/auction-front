@@ -1,0 +1,287 @@
+body {
+  background-color: #2c5976;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body, p, a, ul, li, h1, h2, h3, h4{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+a {
+  color: #000;
+}
+li{
+  list-style-type: none;
+}
+button{
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.App {
+  text-align: center;
+}
+.homepage{
+  text-align: center;
+  padding: 50px;
+  background-color: #73789a;
+  max-width: 600px;
+  border-radius: 12px;
+  border: 1px solid black;
+  margin: 50px auto;
+  height: 400px;
+  color: white;
+}
+.welcome-home{
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+.home-btns{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  color: #000;
+}
+.login-btn {
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: 3px solid #a52c2c;
+  background-color: white;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+.login-btn:hover{
+  border: 3px solid #cf2727;
+}
+.signup-btn {
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: 3px solid #a52c2c;
+  background-color: white;
+  width: 100%;
+  margin: 10px auto;
+  max-width: 200px;
+  cursor: pointer;
+}
+.signup-btn:hover{
+  border: 3px solid #cf2727;
+}
+
+.login{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 100px 0;
+  box-sizing: border-box;
+  background-color: #ffffffe4;
+  max-width: 600px;
+  border-radius: 12px;
+  border: 1px solid black;
+  margin: 50px auto;
+  height: 600px;
+  color: #000000;
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+}
+.login-email{
+  width: 400px;
+  border-radius: 12px;
+  border: 1px solid black;
+  background-color: #ffffff;
+  height: 30px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+.login-submit{
+  width: 70%;
+  align-self: center;
+  border-radius: 12px;
+  padding: 8px;
+  margin: 40px 70px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  border: 1px solid #9b1212;
+  cursor: pointer;
+}
+.login-submit:hover{
+  background-color: white;
+  color: #000000;
+}
+.email-label{
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+}
+.email-label input{
+  width: 300px;
+}
+.two{
+  display: flex;
+  justify-content: center;
+}
+.three{
+  background-color: black;
+  color: white;
+}
+.view{
+  display: none;
+}
+.no-view{
+  display: block;
+  text-decoration: underline;
+  color: #257ec7;
+  
+}
+.bid{
+  background-color: #262b4b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  color: white;
+}
+.bid-title{
+  color: #a8a0a0;;
+}
+
+.auction-item{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.auction-img{
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 16px;
+}
+.item-name{
+  color: #d25a54;
+  padding: 20px 0;
+}
+.start-bid{
+  color: #bdbcbc;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.end-bid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.highest-bid{
+  color: #c0b0b0;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.bid-form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.error-bid{
+  color: red;
+  font-size: 14px;
+  font-weight: 500px;
+}
+.bid-input{
+  width: 100%;
+  height: 40px;
+  border-radius: 16px;
+  background-color: #d0c9c9;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.newbid-btn{
+  width: 100%;
+  height: 30px;
+  padding: 10px 0 30px 0;
+  border-radius: 16px;
+  font-size: 18px;
+  background-color: #257ec7;
+  color: white;
+}
+.newbid-btn:hover{
+  background-color: white;
+  color: #257ec7;
+  border: 3px solid #257ec7;
+}
+.logout-btn{
+  width: 350px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 10px 0 30px 0;
+  border-radius: 16px;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #000000;
+}
+.logout-btn:hover{
+  background-color: #050000;
+  color: white;
+  border: 3px solid #eaeaea;
+}
+.bidders{
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 16px;
+  width: 450px;
+  margin: 10px;
+  color: red;
+  background-color: black;
+}
+.bidders:hover{
+  border: 3px solid red;
+}
+
+
+.user-list{
+  background-color: white;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 50px;
+}
+.user-ul{
+}
+.user-li{
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+.users-title{
+  padding: 10px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.name, .email{
+  padding: 10px 0;
+  color: #4f4f4f;
+}
